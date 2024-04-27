@@ -11,7 +11,7 @@ const Navbar = () => {
           <Link href="/">Home</Link> 
         </li>
         <li className={styles.listItem}>
-          <Link href="/MGMT-home">MGMT Home</Link> 
+        <Link href="/MGMT-home">MGMT Home</Link>
         </li>
         <li className={styles.listItem}>
           <Link href="/USER-home">USER Home</Link> 
