@@ -1,0 +1,31 @@
+.container{
+  border: red solid 2px;
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c02d2d;
+}
+
+.listItem {
+  float: left;
+}
+
+.listItem a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.listItem a:hover {
+  background-color: #219d61;
+}
+
+.active{
+  background-color: green;
+}

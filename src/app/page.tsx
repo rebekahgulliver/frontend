@@ -6,10 +6,15 @@ import Navbar from "../components/navigation-bar/navigation";
 
 export default function Home() {
   return (
-    <div>
-
-<Navbar />  
-
+    <div className={styles.container}>
+      <div><Navbar/></div>
+      <div className={styles.section}>
+        <p>this is a section</p>
+      </div> 
     </div>
   );
+
+
+
+
 }
