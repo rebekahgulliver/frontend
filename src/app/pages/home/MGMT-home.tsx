@@ -3,7 +3,7 @@ import React from 'react';
 const MGMTHome = () => {
   return (
     <div>
-      {/* Page content */}
+      <p>paragraph</p>
     </div>
   );
 };
