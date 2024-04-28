@@ -36,10 +36,60 @@ export default function Home() {
         <div className={styles.fullWidthContainer}>
           <div className={styles.listContainer}>
             <ul className={styles.userList}>
-              <li className={styles.userListItem}>john</li>
-              <li className={styles.userListItem}>jane</li>
-              <li className={styles.userListItem}>joe</li>
-              <li className={styles.userListItem}>jack</li>
+              <li className={styles.userListItem}>
+                <span className={styles.userName}>John Doe</span>
+                <div className={styles.progressBarContainer}>
+                  <progress className={styles.progress} value="60" max="100"></progress>
+                </div>
+                <div className={styles.reminderButtonContainer}>
+                  <button className={styles.reminderButton}>Send Reminder</button>
+                </div>
+              </li>
+              <li className={styles.userListItem}>
+                <span className={styles.userName}>Jane Doe</span>
+                <div className={styles.progressBarContainer}>
+                  <progress className={styles.progress} value="20" max="100"></progress>
+                </div>
+                <div className={styles.reminderButtonContainer}>
+                  <button className={styles.reminderButton}>Send Reminder</button>
+                </div>
+              </li>
+              <li className={styles.userListItem}>
+                <span className={styles.userName}>Chris Lee</span>
+                <div className={styles.progressBarContainer}>
+                  <progress className={styles.progress} value="60" max="100"></progress>
+                </div>
+                <div className={styles.reminderButtonContainer}>
+                  <button className={styles.reminderButton}>Send Reminder</button>
+                </div>
+              </li>
+              <li className={styles.userListItem}>
+                <span className={styles.userName}>Morgan Smith</span>
+                <div className={styles.progressBarContainer}>
+                  <progress className={styles.progress} value="100" max="100"></progress>
+                </div>
+                <div className={styles.reminderButtonContainer}>
+                  <button className={styles.reminderButton}>Send Reminder</button>
+                </div>
+              </li>
+              <li className={styles.userListItem}>
+                <span className={styles.userName}>Kelly Wright</span>
+                <div className={styles.progressBarContainer}>
+                  <progress className={styles.progress} value="80" max="100"></progress>
+                </div>
+                <div className={styles.reminderButtonContainer}>
+                  <button className={styles.reminderButton}>Send Reminder</button>
+                </div>
+              </li>
+              <li className={styles.userListItem}>
+                <span className={styles.userName}>Mark Cross</span>
+                <div className={styles.progressBarContainer}>
+                  <progress className={styles.progress} value="55" max="100"></progress>
+                </div>
+                <div className={styles.completedTextContainer}>
+                  <span className={styles.completedText}>Completed 14/01/2024</span>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
