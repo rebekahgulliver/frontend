@@ -16,6 +16,25 @@ export default function Home() {
     <div className={styles.container}>
 
       <div><Navbar/></div>
+      <div className={styles.topSection}>
+        <div className={styles.fullWidthContainer}>
+          <h2>Onboarding Material</h2>
+        </div>
+        <div className={styles.fullWidthContainer}>
+          <button>Version History</button>
+          <button>Edit Content</button>
+        </div>
+      </div>
+
+      <div className={styles.myTeamSection}>
+        <div className={styles.fullWidthContainer}>
+            <h2 className={styles.teamTitle}>My Team</h2>
+            <button className={styles.teamButton}>Add New Member</button>
+        </div>
+      </div>
+
+
+
 
     </div>
   );

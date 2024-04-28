@@ -1,8 +1,36 @@
 .container{
   border: red solid 2px;
   background-color: whitesmoke;
+  height: 100%;
 }
 
+.fullWidthContainer{
+  width: 100%;
+  height:fit-content;
+  padding: 5px;
+  display: flex;
+}
+
+.teamTitle{
+  width:50%;
+  background-color: yellow;
+}
+
+.teamButton{
+  width:50%;
+  background-color: pink;
+}
+
+.topSection{
+  border: solid red 2px;
+  padding: 5px;
+  background-color: rgb(190, 172, 172);
+}
+
+.myTeamSection{
+  border: solid red 2px;
+  padding: 5px;
+}
 
 .section{
   border: solid blue 2px;
