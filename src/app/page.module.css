@@ -36,6 +36,33 @@
   border: solid blue 2px;
 }
 
+.list-container {
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 10px; 
+}
+
+.userList {
+  list-style-type: none; 
+  padding: 0; 
+  width: 100%;
+}
+
+.userListItem {
+  width: 100%;
+  border: 1px solid #b91212; 
+  padding: 8px; 
+}
+
+
+
+
+
+
+
+
 .main {
   display: flex;
   flex-direction: column;

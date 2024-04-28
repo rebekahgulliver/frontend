@@ -31,6 +31,16 @@ export default function Home() {
             <h2 className={styles.teamTitle}>My Team</h2>
             <button className={styles.teamButton}>Add New Member</button>
         </div>
+        <div className={styles.fullWidthContainer}>
+          <div className={styles.listContainer}>
+            <ul className={styles.userList}>
+              <li className={styles.userListItem}>john</li>
+              <li className={styles.userListItem}>jane</li>
+              <li className={styles.userListItem}>joe</li>
+              <li className={styles.userListItem}>jack</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
 
