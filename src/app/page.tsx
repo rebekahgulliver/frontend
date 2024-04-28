@@ -28,8 +28,10 @@ export default function Home() {
 
       <div className={styles.myTeamSection}>
         <div className={styles.fullWidthContainer}>
+          <div className={styles.topSectionContainer}>
             <h2 className={styles.teamTitle}>My Team</h2>
             <button className={styles.teamButton}>Add New Member</button>
+          </div>
         </div>
         <div className={styles.fullWidthContainer}>
           <div className={styles.listContainer}>
