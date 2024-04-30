@@ -1,7 +1,6 @@
 import React from 'react';
-import Navbar from "../../../components/navigation-bar/navigation";
-import styles from "../knowledgeCheck1/USER-home.module.css"; 
-
+import Navbar from "../../components/navigation-bar/navigation";
+import styles from "../preRequisites/preRequisites.module.css"; 
 
   export function Page (){
   return (

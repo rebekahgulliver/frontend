@@ -16,16 +16,13 @@ const Navbar = () => {
         <Link href="/adminHome">MGMT Home</Link>
         </li>
         <li className={styles.listItem}>
-          <Link href="/userHome/preRequisites">USER Home</Link> 
+          <Link href="/userHome">USER Home</Link> 
         </li>
         <li className={styles.listItem}>
           <Link href="/individualView">MGMT User view</Link> 
         </li>
         <li className={styles.listItem}>
           <Link href="/materialEdit">MGMT CRUD material</Link> 
-        </li>
-        <li className={styles.listItem}>
-          <Link href="/onboardingProcess">USER Onboarding</Link> 
         </li>
         <li className={styles.listItem}>
           <Link href="/teamEdit">MGMT CRUD team</Link> 
