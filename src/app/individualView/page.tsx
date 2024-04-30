@@ -6,18 +6,23 @@ export function Page (){
   return (
     <div className={styles.container}>
       <div><Navbar/></div>
-      <div className={styles.topSection}>
-        <div className={styles.fullWidthContainer}>
-          <h2>John Doe</h2>
+      <div className={styles.titleContainer}>
+        <div className={styles.topSection}>
+          <div className={styles.fullWidthContainer}>
+            <h2 className={styles.whiteText}>John Doe</h2>
+          </div>
+          <div className={styles.fullWidthContainer}>
+            <h4 className={styles.whiteText}>john.doe@email.com</h4>
+          </div>
         </div>
-        <div className={styles.fullWidthContainer}>
-          <h4>john.doe@email.com</h4>
-        </div>
-      </div>
 
-      <div className={styles.middleSection}>
-        <div className={styles.fullWidthContainer}>
-          <h3>Onboarding Status: Knowledge Check Awaiting Approval</h3>
+
+        <div className={styles.middleSection}>
+          <div className={styles.titleContainer}>
+            <div className={styles.fullWidthContainer}>
+              <h3 className={styles.whiteText}>Onboarding Status: Knowledge Check Awaiting Approval</h3>
+            </div>
+          </div>
         </div>
       </div>
    
