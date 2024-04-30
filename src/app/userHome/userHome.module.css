@@ -4,6 +4,8 @@
   height: 59rem;
 }
 
+
+
 .titleContainer{
   background-color: #a30b1a;
   width:100%;
@@ -60,4 +62,8 @@ display:flex;
 
   .onboardingSteps{
     font-size: x-large;
+  }
+
+  .whiteText{
+    color:whitesmoke;
   }

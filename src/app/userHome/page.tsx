@@ -25,11 +25,11 @@ export function Page (){
       <div><Navbar/></div>
       <div className={styles.topSection}>
         <div className={styles.titleContainer}>
-          <h2>KnowledgeBase Onboarding</h2>
+          <h2 className={styles.whiteText}>KnowledgeBase Onboarding</h2>
           <button className={styles.continueButton}><Link href="/knowledgeCheck2">Continue</Link></button>
         </div>
       </div>
-      <div className={styles.middleSection}>
+      <div className={`${styles.middleSection} ${styles.whiteText}`}>
         <div className={styles.column}>
           <ProgressBar activeStep={3} />
         </div>
