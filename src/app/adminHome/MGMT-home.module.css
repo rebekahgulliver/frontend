@@ -1,11 +1,12 @@
 .container{
-    height: 100%;
+    height: 59rem;
+    background-color: #323232;
+
   }
   
   .fullWidthContainer{
     width: 100%;
     height:fit-content;
-    padding: 5px;
     display: flex;
   }
   
@@ -21,7 +22,6 @@
   
   .topSection{
     padding: 5px;
-    margin-bottom: 1rem;
   }
   
   .myTeamSection{
@@ -36,16 +36,30 @@
     width:70%;
     display: flex;
   }
+
+  .titleContainer1{
+    background-color: #a30b1a;
+    width:100%;
+    padding: 5px;
+    margin: 0 0 2rem 0;
+  }
+
+  .titleContainer{
+    background-color: #a30b1a;
+    width:100%;
+    padding: 5px;
+  }
   
   .listContainer {
     width: 100%; 
     border-radius: 5px;
-    padding: 10px;
   }
   
   .userList {
     list-style-type: none; 
     padding: 0; 
+    background-color: rgb(248, 239, 227);
+
   }
   
   .userListItem {
@@ -54,7 +68,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    border: 3px solid #000000; 
+    border: 1px solid #000000; 
     padding: 8px; 
   }
   
@@ -96,4 +110,17 @@
   .completedText{
     width: 50%;
     margin-left:50%;
+  }
+
+
+  .button{
+    padding: 0.4rem;
+    margin: 0.5rem 0.4rem 0 0;
+  }
+
+
+  .whiteText{
+    color: whitesmoke;
+    margin-bottom:2rem;
+    padding-left: 0.4rem;
   }

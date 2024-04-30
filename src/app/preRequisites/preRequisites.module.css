@@ -1,0 +1,23 @@
+.container{
+    background-color: #323232;
+    height: 59rem;
+}
+
+.main{
+    background-color: #323232;
+}
+
+.h2, .prerequisitesList{
+    color: whitesmoke;
+    font-weight: normal;
+
+}
+
+.prerequisitesList {
+    list-style-type: none; 
+  }
+  
+  .prerequisitesList li {
+    margin-bottom: 5px; 
+  }
+  

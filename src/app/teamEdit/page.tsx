@@ -10,7 +10,7 @@ export function Page (){
 <div><Navbar/></div>
 
 <div className={styles.myTeamSection}>
-  <div className={styles.fullWidthContainer}>
+  <div className={styles.titleContainer}>
     <div className={styles.topSectionContainer}>
       <h2 className={styles.teamTitle}>My Team</h2>
     </div>

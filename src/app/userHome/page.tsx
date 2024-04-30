@@ -24,8 +24,10 @@ export function Page (){
     <div className={styles.container}>
       <div><Navbar/></div>
       <div className={styles.topSection}>
-        <h2>KnowledgeBase Onboarding</h2>
-        <button className={styles.continueButton}><Link href="/knowledgeCheck2">Continue</Link></button>
+        <div className={styles.titleContainer}>
+          <h2>KnowledgeBase Onboarding</h2>
+          <button className={styles.continueButton}><Link href="/knowledgeCheck2">Continue</Link></button>
+        </div>
       </div>
       <div className={styles.middleSection}>
         <div className={styles.column}>

@@ -1,5 +1,6 @@
 .container{
   padding-bottom: 1rem;
+  background-color: #323232;
 }
 
 .navList {
@@ -7,7 +8,8 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #c02d2d;
+  background-color: #323232;
+  border-bottom: rgb(37, 37, 37) solid 2px;
 }
 
 .listItem {
@@ -23,9 +25,9 @@
 }
 
 .listItem a:hover {
-  background-color: #219d61;
+  background-color: #a30b1a;
 }
 
 .active{
-  background-color: green;
+  background-color: #a30b1a;
 }

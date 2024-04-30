@@ -10,17 +10,21 @@ import styles from "../adminHome/MGMT-home.module.css";
     <div><Navbar/></div>
     <div className={styles.topSection}>
       <div className={styles.fullWidthContainer}>
-        <h2>Onboarding Material</h2>
-      </div>
-      <div className={styles.fullWidthContainer}>
-        <button>Version History</button>
-        <button>Edit Content</button>
+        <div className={styles.titleContainer1}>
+          <h2>Onboarding Material</h2>    
+          <div className={styles.fullWidthContainer}>
+            <button className={styles.button}>Version History</button>
+            <button className={styles.button}>Edit Content</button>
+          </div>
+        </div>    
       </div>
     </div>
 
+    <p className={styles.whiteText}>put some text in here to break up the red</p>
+
     <div className={styles.myTeamSection}>
       <div className={styles.fullWidthContainer}>
-        <div className={styles.topSectionContainer}>
+        <div className={styles.titleContainer}>
           <h2 className={styles.teamTitle}>My Team</h2>
           <button className={styles.teamButton}>Add New Member</button>
         </div>
