@@ -1,99 +1,46 @@
-import React from 'react';
 import Navbar from "../../components/navigation-bar/navigation";
-import styles from "../knowledgeCheck2/USER-home.module.css"; 
+import styles from "../knowledgeCheck2/knowledgeCheck2.module.css"; 
 
-
-  export function Page (){
+function Page() {
   return (
     <div className={styles.container}>
-
-    <div><Navbar/></div>
-    <div className={styles.topSection}>
-      <div className={styles.fullWidthContainer}>
-        <h2>KnowledgeBase Onboarding</h2>
+      <div><Navbar/></div>
+      <div className={styles.topSection}>
+        <h2>Account Configuration: Knowledge Check</h2>
       </div>
-      <div className={styles.fullWidthContainer}>
-        <button>Version History</button>
-        <button>Edit Content</button>
-      </div>
-    </div>
-
-    <div className={styles.myTeamSection}>
-      <div className={styles.fullWidthContainer}>
-        <div className={styles.topSectionContainer}>
-          <h2 className={styles.teamTitle}>My Team</h2>
-          <button className={styles.teamButton}>Add New Member</button>
-        </div>
-      </div>
-      <div className={styles.fullWidthContainer}>
-        <div className={styles.listContainer}>
-          <ul className={styles.userList}>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>John Doe</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="60" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Jane Doe</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="20" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Chris Lee</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="60" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Morgan Smith</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="100" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Kelly Wright</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="80" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Mark Cross</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="55" max="100"></progress>
-              </div>
-              <div className={styles.completedTextContainer}>
-                <span className={styles.completedText}>Completed 14/01/2024</span>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div className={styles.form}>
+        <form>
+          <div>
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+            />
+          </div>
+          <button type="button" >Submit</button>
+        </form>
       </div>
     </div>
-
-
-
-
-  </div>
   );
-};
+}
 
 export default Page;
-
-

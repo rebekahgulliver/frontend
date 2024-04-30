@@ -1,98 +1,47 @@
 import React from 'react';
 import Navbar from "../../components/navigation-bar/navigation";
-import styles from "../userHome/userHome.module.css"; 
+import styles from "../userHome/userHome.module.css";
+import Link from 'next/link';
 
-  export function Page (){
+interface ProgressBarProps {
+  activeStep: number;
+}
+
+const ProgressBar: React.FC<ProgressBarProps> = ({ activeStep }) => {
+  return (
+    <div className={styles.progressBar}>
+      <div className={`${styles.step} ${activeStep >= 1 && styles.active}`}></div>
+      <div className={`${styles.step} ${activeStep >= 2 && styles.active}`}></div>
+      <div className={`${styles.step} ${activeStep >= 3 && styles.active}`}></div>
+      <div className={`${styles.step} ${activeStep >= 4 && styles.active}`}></div>
+      <div className={`${styles.step} ${activeStep >= 5 && styles.active}`}></div>
+    </div>
+  );
+};
+
+export function Page (){
   return (
     <div className={styles.container}>
-
-    <div><Navbar/></div>
-    <div className={styles.topSection}>
-      <div className={styles.fullWidthContainer}>
+      <div><Navbar/></div>
+      <div className={styles.topSection}>
         <h2>KnowledgeBase Onboarding</h2>
+        <button className={styles.continueButton}>Continue</button>
       </div>
-      <div className={styles.fullWidthContainer}>
-        <button>Version History</button>
-        <button>Edit Content</button>
-      </div>
-    </div>
-
-    <div className={styles.myTeamSection}>
-      <div className={styles.fullWidthContainer}>
-        <div className={styles.topSectionContainer}>
-          <h2 className={styles.teamTitle}>My Team</h2>
-          <button className={styles.teamButton}>Add New Member</button>
+      <div className={styles.middleSection}>
+        <div className={styles.column}>
+          <ProgressBar activeStep={3} />
         </div>
-      </div>
-      <div className={styles.fullWidthContainer}>
-        <div className={styles.listContainer}>
-          <ul className={styles.userList}>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>John Doe</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="60" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Jane Doe</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="20" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Chris Lee</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="60" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Morgan Smith</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="100" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Kelly Wright</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="80" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Mark Cross</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="55" max="100"></progress>
-              </div>
-              <div className={styles.completedTextContainer}>
-                <span className={styles.completedText}>Completed 14/01/2024</span>
-              </div>
-            </li>
-          </ul>
+        <div className={styles.column}>
+          <p className={styles.onboardingSteps}>pre-requisites</p>
+          <p className={styles.onboardingSteps}>pre-requisites: knowledge check</p>
+          <p className={styles.onboardingSteps}>account configuration</p>
+          <p className={styles.onboardingSteps}><Link href="/knowledgeCheck2">account configuration: knowledge check</Link></p>
+          <p className={styles.onboardingSteps}>cloning repositories</p>
         </div>
       </div>
     </div>
-
-
-
-
-  </div>
   );
 };
 
 export default Page;
-
 

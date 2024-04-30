@@ -1,0 +1,9 @@
+.topSection{
+    border: solid red 2px;
+    margin: 5px;
+}
+.form{
+    background-color: rgb(195, 195, 195);
+    margin: 5px;
+    border: solid red 2px;
+}
