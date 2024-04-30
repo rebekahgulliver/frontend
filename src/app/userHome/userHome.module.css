@@ -1,11 +1,9 @@
 .topSection{
 margin: 5px;
-border: red solid 2px;
 }
 
 .middleSection{
 margin: 5px;
-border: red solid 2px;
 width: 100%;
 display:flex;
 }
@@ -22,7 +20,7 @@ display:flex;
 
 .leftColumn{
     width:20%;
-    align-items: flex-end; /* Align items to the right */
+    align-items: flex-end; 
 
 }
 
@@ -32,20 +30,20 @@ display:flex;
     margin: 5px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
+    align-items: flex-end; 
 
   }
   
   .step {
-    width: 20px; /* Diameter of the circle */
-    height: 20px; /* Diameter of the circle */
-    background-color: #f0f0f0; /* Background color of the circle */
-    border-radius: 50%; /* Make it a circle */
+    width: 20px; 
+    height: 20px; 
+    background-color: #a6a6a6; 
+    border-radius: 50%; 
     margin-bottom: 10px;
   }
   
   .step.active {
-    background-color: #00bf13; /* Color of the active step */
+    background-color: #00bf13; 
   }
 
   .onboardingSteps{

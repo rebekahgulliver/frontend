@@ -32,11 +32,11 @@ export function Page (){
           <ProgressBar activeStep={3} />
         </div>
         <div className={styles.column}>
-          <p className={styles.onboardingSteps}>pre-requisites</p>
-          <p className={styles.onboardingSteps}>pre-requisites: knowledge check</p>
-          <p className={styles.onboardingSteps}>account configuration</p>
-          <p className={styles.onboardingSteps}><Link href="/knowledgeCheck2">account configuration: knowledge check</Link></p>
-          <p className={styles.onboardingSteps}>cloning repositories</p>
+          <p className={styles.onboardingSteps}><Link href="/preRequisites">Pre-requisites</Link></p>
+          <p className={styles.onboardingSteps}><Link href="/knowledgeCheck1">Pre-requisites: knowledge check</Link></p>
+          <p className={styles.onboardingSteps}><Link href="/accountConfiguration">Account configuration</Link></p>
+          <p className={styles.onboardingSteps}><Link href="/knowledgeCheck2">Account configuration: knowledge check</Link></p>
+          <p className={styles.onboardingSteps}><Link href="/cloningRepositories">Cloning repositories</Link></p>
         </div>
       </div>
     </div>
