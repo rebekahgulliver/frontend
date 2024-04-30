@@ -8,35 +8,82 @@ function Page() {
       <div className={styles.topSection}>
         <h2>Account Configuration: Knowledge Check</h2>
       </div>
-      <div className={styles.form}>
-        <form>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              required
-            />
-          </div>
-          <button type="button" >Submit</button>
+      <div className={styles.middleSection}>
+        <form className={styles.form}>
+          {/* <div>
+            <h3>Question 1: what is the answer?</h3>
+            <label className={styles.label}>
+              <input type="radio" name="color" value="red" />
+              Red
+            </label>
+            <label className={styles.label}>
+              <input type="radio" name="color" value="blue" />
+              Blue
+            </label>
+            <label className={styles.label}>
+              <input type="radio" name="color" value="green" />
+              Green
+            </label>
+            <label className={styles.label}>
+              <input type="radio" name="color" value="other" />
+              Other
+            </label>
+          </div> */}
+          {/* <div>
+            <h3>Question 2: this is a question:</h3>
+            <textarea className={styles.textarea} name="feedback"></textarea>
+          </div> */}
+          <div> 
+            <div className={styles.fullWidthContainer}>
+              <div className={styles.leftColumn}>
+                <h4>I have set up a byte-central user on Byte Guard</h4>
+              </div>         
+              <div className={styles.rightColumn}>
+                <label><input type="checkbox" name="agree" required/>Yes</label>
+              </div>    
+            </div> 
+            <div className={styles.fullWidthContainer}>
+              <div className={styles.leftColumn}>
+                <h4>I have added my user to the BaseUsers group</h4>
+              </div>         
+              <div className={styles.rightColumn}>
+                <label><input type="checkbox" name="agree" required/>Yes</label>
+              </div>    
+            </div>
+            <div className={styles.fullWidthContainer}>
+              <div className={styles.leftColumn}>
+                <h4>I have configureed MFA for my IAM user via AWS Console</h4>
+              </div>         
+              <div className={styles.rightColumn}>
+                <label><input type="checkbox" name="agree" required/>Yes</label>
+              </div>    
+            </div>
+            <div className={styles.fullWidthContainer}>
+              <div className={styles.leftColumn}>
+                <h4>I have set up CLI access to AWS</h4>
+              </div>         
+              <div className={styles.rightColumn}>
+                <label><input type="checkbox" name="agree" required/>Yes</label>
+              </div>    
+            </div>
+            <div className={styles.fullWidthContainer}>
+              <div className={styles.leftColumn}>
+                <h4>I have verified that my configuration changes were successful</h4>
+              </div>         
+              <div className={styles.rightColumn}>
+                <label><input type="checkbox" name="agree" required/>Yes</label>
+              </div>    
+            </div>
+            <div className={styles.fullWidthContainer}>
+              <div className={styles.leftColumn}>
+                <h4>I have set up Console access to AWS</h4>
+              </div>         
+              <div className={styles.rightColumn}>
+                <label><input type="checkbox" name="agree" required/>Yes</label>
+              </div>    
+            </div>
+            </div>
+          <button className={styles.button} type="button" >Submit</button>
         </form>
       </div>
     </div>

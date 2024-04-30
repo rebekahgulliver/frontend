@@ -25,7 +25,7 @@ export function Page (){
       <div><Navbar/></div>
       <div className={styles.topSection}>
         <h2>KnowledgeBase Onboarding</h2>
-        <button className={styles.continueButton}>Continue</button>
+        <button className={styles.continueButton}><Link href="/knowledgeCheck2">Continue</Link></button>
       </div>
       <div className={styles.middleSection}>
         <div className={styles.column}>

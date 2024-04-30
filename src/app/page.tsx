@@ -9,12 +9,8 @@ export default function Home() {
     <div className={styles.container}>
       <div><Navbar/></div>
       <div className={styles.section}>
-        <p>this is a section</p>
-        <Link href="/home/MGMT-Home">
-        <p>Go to Page 1</p>
-      </Link>
-
-      
+        <p>welcome</p>
+ 
       </div> 
     </div>
 

@@ -1,9 +1,57 @@
+.fullWidthContainer{
+    width:100%;
+    display: flex;
+}
+
 .topSection{
     border: solid red 2px;
     margin: 5px;
 }
-.form{
-    background-color: rgb(195, 195, 195);
-    margin: 5px;
+
+.middleSection{
     border: solid red 2px;
+    margin: 5px;
+    width:50%;
 }
+
+  
+  .form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    margin-bottom: 10px;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    width:fit-content;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+.leftColumn{
+    width:50%;
+    margin: 5px;
+}
+.rightColumn{
+    width:fit-content;
+}
+
