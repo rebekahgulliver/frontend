@@ -12,7 +12,6 @@ export function Page() {
     <div className={styles.container}>
       <div><Navbar/></div>
       <div className={styles.topSection}>
-        {/* Rest of your JSX */}
         <div className={styles.fullWidthContainer}>
           <div className={styles.titleContainer}>
             <h2 className={styles.teamTitle}>My Team</h2>

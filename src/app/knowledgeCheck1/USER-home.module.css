@@ -1,0 +1,100 @@
+
+.container{
+    height: 95rem;
+    background-color: #323232;
+}
+
+.fullWidthContainer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topSection{
+    margin: 5px;
+}
+
+.middleSection{
+    margin: 5px;
+    width:50%;
+}
+
+  
+  .form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    margin-bottom: 10px;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    width:fit-content;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+.leftColumn{
+    flex: 1;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+.rightColumn{
+    flex: 1;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.titleContainer{
+    background-color: #a30b1a;
+    width:100%;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .whiteText{
+    color: whitesmoke;
+  }
+
+
+  .pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    margin-top: 2rem;
+    background-color: #a30b1a;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .button:hover {
+    background-color: #db515f;
+    align-self: center;
+  }

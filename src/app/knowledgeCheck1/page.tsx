@@ -1,99 +1,78 @@
 import React from 'react';
 import Navbar from "../../components/navigation-bar/navigation";
 import styles from "../knowledgeCheck1/USER-home.module.css"; 
+import Link from 'next/link';
 
-
-  export function Page (){
+export function Page (){
   return (
     <div className={styles.container}>
-
-    <div><Navbar/></div>
-    <div className={styles.topSection}>
-      <div className={styles.fullWidthContainer}>
-        <h2>KnowledgeBase Onboarding</h2>
-      </div>
-      <div className={styles.fullWidthContainer}>
-        <button>Version History</button>
-        <button>Edit Content</button>
-      </div>
-    </div>
-
-    <div className={styles.myTeamSection}>
-      <div className={styles.fullWidthContainer}>
-        <div className={styles.topSectionContainer}>
-          <h2 className={styles.teamTitle}>My Team</h2>
-          <button className={styles.teamButton}>Add New Member</button>
+      <Navbar />
+      <div className={styles.pageContainer}>
+        <div className={styles.titleContainer}>
+          <div className={styles.whiteText}>
+            <div className={styles.topSection}>
+              <h2>Account Configuration: Knowledge Check</h2>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className={styles.fullWidthContainer}>
-        <div className={styles.listContainer}>
-          <ul className={styles.userList}>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>John Doe</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="60" max="100"></progress>
+        <div className={styles.middleSection}>
+          <form className={styles.form}>
+            <div> 
+              <div className={styles.fullWidthContainer}>
+                <div className={styles.leftColumn}>
+                  <h4>I have set up a byte-central user on Byte Guard</h4>
+                </div>         
+                <div className={styles.rightColumn}>
+                  <label><input type="checkbox" name="agree" required/>Yes</label>
+                </div>    
+              </div> 
+              <div className={styles.fullWidthContainer}>
+                <div className={styles.leftColumn}>
+                  <h4>I have added my user to the BaseUsers group</h4>
+                </div>         
+                <div className={styles.rightColumn}>
+                  <label><input type="checkbox" name="agree" required/>Yes</label>
+                </div>    
               </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
+              <div className={styles.fullWidthContainer}>
+                <div className={styles.leftColumn}>
+                  <h4>I have configured MFA for my IAM user via AWS Console</h4>
+                </div>         
+                <div className={styles.rightColumn}>
+                  <label><input type="checkbox" name="agree" required/>Yes</label>
+                </div>    
               </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Jane Doe</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="20" max="100"></progress>
+              <div className={styles.fullWidthContainer}>
+                <div className={styles.leftColumn}>
+                  <h4>I have set up CLI access to AWS</h4>
+                </div>         
+                <div className={styles.rightColumn}>
+                  <label><input type="checkbox" name="agree" required/>Yes</label>
+                </div>    
               </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
+              <div className={styles.fullWidthContainer}>
+                <div className={styles.leftColumn}>
+                  <h4>I have verified that my configuration changes were successful</h4>
+                </div>         
+                <div className={styles.rightColumn}>
+                  <label><input type="checkbox" name="agree" required/>Yes</label>
+                </div>    
               </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Chris Lee</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="60" max="100"></progress>
+              <div className={styles.fullWidthContainer}>
+                <div className={styles.leftColumn}>
+                  <h4>I have set up Console access to AWS</h4>
+                </div>         
+                <div className={styles.rightColumn}>
+                  <label><input type="checkbox" name="agree" required/>Yes</label>
+                </div>    
               </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Morgan Smith</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="100" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Kelly Wright</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="80" max="100"></progress>
-              </div>
-              <div className={styles.reminderButtonContainer}>
-                <button className={styles.reminderButton}>Send Reminder</button>
-              </div>
-            </li>
-            <li className={styles.userListItem}>
-              <span className={styles.userName}>Mark Cross</span>
-              <div className={styles.progressBarContainer}>
-                <progress className={styles.progress} value="55" max="100"></progress>
-              </div>
-              <div className={styles.completedTextContainer}>
-                <span className={styles.completedText}>Completed 14/01/2024</span>
-              </div>
-            </li>
-          </ul>
+            </div>
+            <button className={styles.button} type="button"><Link href="/accountConfiguration">Next</Link></button>
+          </form>
         </div>
       </div>
     </div>
-
-
-
-
-  </div>
   );
 };
 
 export default Page;
-
-
