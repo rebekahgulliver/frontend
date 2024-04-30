@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Navbar from "../../../components/navigation-bar/navigation";
+import Navbar from "../../components/navigation-bar/navigation";
 import styles from "./home.module.css";
 
 const Login = () => {

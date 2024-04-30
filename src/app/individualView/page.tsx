@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from "../../../components/navigation-bar/navigation";
-import styles from "../individual-view/MGMT-user-view.module.css"; 
+import Navbar from "../../components/navigation-bar/navigation";
+import styles from "../individualView/MGMT-user-view.module.css"; 
 
 
-const MGMTUserView = () => {
+export function Page (){
   return (
 <div className={styles.container}>
 
@@ -43,4 +43,4 @@ const MGMTUserView = () => {
   );
 };
 
-export default MGMTUserView;
+export default Page;

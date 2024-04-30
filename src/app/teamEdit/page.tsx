@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from "../../../components/navigation-bar/navigation";
-import styles from "../team-edit/MGMT-CRUD-team.module.css"; 
+import Navbar from "../../components/navigation-bar/navigation";
+import styles from "../teamEdit/MGMT-CRUD-team.module.css"; 
 
 
-const MGMTCRUDTeam = () => {
+export function Page (){
   return (
 <div className={styles.container}>
 
@@ -72,4 +72,4 @@ const MGMTCRUDTeam = () => {
   );
 };
 
-export default MGMTCRUDTeam;
+export default Page;

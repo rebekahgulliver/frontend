@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from "../../../components/navigation-bar/navigation";
-import styles from "../home/MGMT-home.module.css"; 
+import Navbar from "../../components/navigation-bar/navigation";
+import styles from "../adminHome/MGMT-home.module.css"; 
 
 
-const MGMTHome = () => {
+  export function Page (){
   return (
     <div className={styles.container}>
 
@@ -94,4 +94,6 @@ const MGMTHome = () => {
   );
 };
 
-export default MGMTHome;
+export default Page;
+
+
