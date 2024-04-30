@@ -14,7 +14,6 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ activeStep }) => {
       <div className={`${styles.step} ${activeStep >= 2 && styles.active}`}></div>
       <div className={`${styles.step} ${activeStep >= 3 && styles.active}`}></div>
       <div className={`${styles.step} ${activeStep >= 4 && styles.active}`}></div>
-      <div className={`${styles.step} ${activeStep >= 5 && styles.active}`}></div>
     </div>
   );
 };
@@ -38,7 +37,6 @@ export function Page (){
           <p className={styles.onboardingSteps}><Link href="/knowledgeCheck1">Pre-requisites: knowledge check</Link></p>
           <p className={styles.onboardingSteps}><Link href="/accountConfiguration">Account configuration</Link></p>
           <p className={styles.onboardingSteps}><Link href="/knowledgeCheck2">Account configuration: knowledge check</Link></p>
-          <p className={styles.onboardingSteps}><Link href="/cloningRepositories">Cloning repositories</Link></p>
         </div>
       </div>
     </div>
