@@ -1,0 +1,68 @@
+.container{
+    background-color: #323232;
+    height: 59rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.main{
+    background-color: #323232;
+}
+.accountSection{
+    max-width: 800px;
+    margin-top: 2px;
+}
+
+.h2{
+    color: whitesmoke;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.accountList {
+    list-style-type: none; 
+    color: whitesmoke;
+    font-weight: normal;
+  }
+  
+  .accountList li {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  
+.accountList li:before {
+    content: "•";
+    color: #ffffff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .accountList li:last-child {
+    margin-bottom: 0;
+  }
+
+  
+.nextButtonContainer {
+    margin-top: 2rem;
+  }
+  
+  .nextButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a30b1a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nextButton:hover {
+    background-color: #df4756;
+  }
