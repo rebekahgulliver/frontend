@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link href="/adminHome">MGMT Home</Link>
         </li>
         <li className={styles.listItem}>
-          <Link href="/userHome">USER Home</Link> 
+          <Link href="/userHome/preRequisites">USER Home</Link> 
         </li>
         <li className={styles.listItem}>
           <Link href="/individualView">MGMT User view</Link> 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from "../../components/navigation-bar/navigation";
-import styles from "../onboardingProcess/USER-onboarding.module.css"; 
+import Navbar from "../../../components/navigation-bar/navigation";
+import styles from "../accountConfiguration/USER-home.module.css"; 
 
 
   export function Page (){
@@ -10,7 +10,7 @@ import styles from "../onboardingProcess/USER-onboarding.module.css";
     <div><Navbar/></div>
     <div className={styles.topSection}>
       <div className={styles.fullWidthContainer}>
-        <h2>Onboarding Material</h2>
+        <h2>KnowledgeBase Onboarding</h2>
       </div>
       <div className={styles.fullWidthContainer}>
         <button>Version History</button>
