@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "../../components/navigation-bar/navigation";
-import styles from "../knowledgeCheck1/USER-home.module.css"; 
+import styles from "../knowledgeCheck2/knowledgeCheck2.module.css"; 
 import Link from 'next/link';
 
 export function Page (){
