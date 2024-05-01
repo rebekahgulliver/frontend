@@ -33,10 +33,9 @@ export function Page (){
             <li>Designs: Figma File</li>
             <li>Review the Architecture Overview Document</li>
           </ul>
+          <hr className={styles.lineBreak}></hr>
+          
         </div>
-        <div className={styles.nextButtonContainer}>
-        <button className={styles.nextButton}><Link href="/knowledgeCheck1">Next</Link></button>
-      </div>
       </div>
     </div>
   );

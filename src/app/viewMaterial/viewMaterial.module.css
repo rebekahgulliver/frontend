@@ -66,3 +66,7 @@
   .nextButton:hover {
     background-color: #df4756;
   }
+
+  .lineBreak{
+    margin: 5rem 0;
+  }
