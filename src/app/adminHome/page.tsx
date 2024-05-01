@@ -13,6 +13,13 @@ export function Page() {
       <div><Navbar/></div>
       <div className={styles.topSection}>
         <div className={styles.fullWidthContainer}>
+          <div className={styles.titleContainer1}>         
+            <h2 className={styles.teamTitle}>Onboarding Material</h2>
+            <button className={styles.teamButton}><Link href="/viewMaterial">View Current Material</Link></button>
+
+          </div> 
+        </div>        
+        <div className={styles.fullWidthContainer}>
           <div className={styles.titleContainer}>
             <h2 className={styles.teamTitle}>My Team</h2>
             <button className={styles.teamButton}>Add New Member</button>
