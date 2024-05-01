@@ -17,20 +17,20 @@ const Navbar = () => {
           </li>
           {showAdminLink && (
             <li className={styles.listItem}>
-              <Link href="/adminHome">Admin Home</Link>
+              <Link href="/adminHome">Admin Dashboard</Link>
             </li>
           )}
           <li className={styles.listItem}>
-            <Link href="/userHome">User Home</Link>
+            <Link href="/userHome">User Dashboard</Link>
           </li>
           {showAdminLink && (
             <li className={styles.listItem}>
-              <Link href="/individualView">Admin User view</Link>
+              <Link href="/individualView">Admin User View</Link>
             </li>
           )}
           {showAdminLink && (
             <li className={styles.listItem}>
-              <Link href="/teamEdit">MGMT CRUD team</Link>
+              <Link href="/teamEdit">Admin My Team</Link>
             </li>
           )}
         </ul>
