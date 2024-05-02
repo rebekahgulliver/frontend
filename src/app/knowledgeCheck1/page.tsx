@@ -11,7 +11,7 @@ export function Page (){
         <div className={styles.titleContainer}>
           <div className={styles.whiteText}>
             <div className={styles.topSection}>
-              <h2>Account Configuration: Knowledge Check</h2>
+              <h2>Pre-requisites: Knowledge Check</h2>
             </div>
           </div>
         </div>

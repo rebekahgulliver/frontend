@@ -11,7 +11,7 @@
 .main{
     background-color: #323232;
 }
-.prerequisiteSection{
+.prerequisitesSection{
     max-width: 800px;
     margin-top: 2px;
 }
@@ -33,7 +33,9 @@
     color: #ffffff;
     font-size: 16px;
     margin-bottom: 10px;
-  }
+    padding: 5px; 
+}
+
   
   
 .prerequisitesList li:before {
