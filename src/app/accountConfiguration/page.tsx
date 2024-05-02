@@ -29,7 +29,7 @@ export function Page (){
             <li className={styles.nest}>Continue and enter “New Starter on Knowledge Base” in the Justification Field</li>
             <li className={styles.nest}>Submit your request and await approval</li>
             <li className={styles.mainList}>Configure MFA for your IAM user after creation via the AWS Web Console</li>
-            <li className={styles.nest}>Log in at <Link href="/knowledgeCheck2">https://console.aws.amazon.com/</Link> with the credentials emailed to you</li>
+            <li className={styles.nest}>Log in at <Link href="https://console.aws.amazon.com/">https://console.aws.amazon.com/</Link> with the credentials emailed to you</li>
             <li className={styles.nest}>Click on your account in the top right and select “Security credentials” from the dropdown</li>
             <li className={styles.nest}>Scroll down to Multi-factor authentication (MFA) and select Assign MFA device</li>
             <li className={styles.nest}>Follow the steps to add your mobile authenticator as a device</li>
@@ -42,7 +42,7 @@ export function Page (){
           </ul>
         </div>
         <div className={styles.nextButtonContainer}>
-        <button className={styles.nextButton}><Link href="https://console.aws.amazon.com/">Next</Link></button>
+        <button className={styles.nextButton}><Link href="/knowledgeCheck2">Next</Link></button>
       </div>
       </div>
     </div>

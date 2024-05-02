@@ -20,7 +20,7 @@ export function Page (){
             <div> 
               <div className={styles.fullWidthContainer}>
                 <div className={styles.leftColumn}>
-                  <h4>I have set up a byte-central user on Byte Guard</h4>
+                  <h4>I have ensured I have the correct permisions to set up my development area</h4>
                 </div>         
                 <div className={styles.rightColumn}>
                   <label><input type="checkbox" name="agree" required/>Yes</label>
@@ -28,7 +28,7 @@ export function Page (){
               </div> 
               <div className={styles.fullWidthContainer}>
                 <div className={styles.leftColumn}>
-                  <h4>I have added my user to the BaseUsers group</h4>
+                  <h4>I have installed all the relevant software</h4>
                 </div>         
                 <div className={styles.rightColumn}>
                   <label><input type="checkbox" name="agree" required/>Yes</label>
@@ -36,7 +36,7 @@ export function Page (){
               </div>
               <div className={styles.fullWidthContainer}>
                 <div className={styles.leftColumn}>
-                  <h4>I have configured MFA for my IAM user via AWS Console</h4>
+                  <h4>I have reviewed the Architecture Overview document</h4>
                 </div>         
                 <div className={styles.rightColumn}>
                   <label><input type="checkbox" name="agree" required/>Yes</label>
@@ -44,23 +44,7 @@ export function Page (){
               </div>
               <div className={styles.fullWidthContainer}>
                 <div className={styles.leftColumn}>
-                  <h4>I have set up CLI access to AWS</h4>
-                </div>         
-                <div className={styles.rightColumn}>
-                  <label><input type="checkbox" name="agree" required/>Yes</label>
-                </div>    
-              </div>
-              <div className={styles.fullWidthContainer}>
-                <div className={styles.leftColumn}>
-                  <h4>I have verified that my configuration changes were successful</h4>
-                </div>         
-                <div className={styles.rightColumn}>
-                  <label><input type="checkbox" name="agree" required/>Yes</label>
-                </div>    
-              </div>
-              <div className={styles.fullWidthContainer}>
-                <div className={styles.leftColumn}>
-                  <h4>I have set up Console access to AWS</h4>
+                  <h4>I have confirmed all software versions are compatible</h4>
                 </div>         
                 <div className={styles.rightColumn}>
                   <label><input type="checkbox" name="agree" required/>Yes</label>
